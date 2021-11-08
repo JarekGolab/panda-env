@@ -1,0 +1,111 @@
+2021-11-05T19:03:52.204Z [jfrou] [INFO ] [71e9513eb76faa61] [bootstrap.go:76               ] [main                ] - Router (jfrou) service initialization started. Version: 7.26.0-1 Revision: fc921b2dfafca1829dfa35c5ee2dd6898e0faae1 PID: 3707 Home: /opt/jfrog/artifactory
+2021-11-05T19:03:52.204Z [jfrou] [INFO ] [71e9513eb76faa61] [bootstrap.go:79               ] [main                ] - JFrog Router IP: 172.18.0.4
+2021-11-05T19:03:57.209Z [jfrou] [INFO ] [71e9513eb76faa61] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 5 seconds with 2m0s timeout
+2021-11-05T19:04:02.228Z [jfrou] [INFO ] [71e9513eb76faa61] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 10 seconds with 2m0s timeout
+2021-11-05T19:04:07.242Z [jfrou] [INFO ] [71e9513eb76faa61] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 15 seconds with 2m0s timeout
+2021-11-05T19:04:12.297Z [jfrou] [INFO ] [71e9513eb76faa61] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 20 seconds with 2m0s timeout
+2021-11-05T19:04:17.315Z [jfrou] [INFO ] [71e9513eb76faa61] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 25 seconds with 2m0s timeout
+2021-11-05T19:04:22.326Z [jfrou] [INFO ] [71e9513eb76faa61] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 30 seconds with 2m0s timeout
+2021-11-05T19:04:27.334Z [jfrou] [INFO ] [71e9513eb76faa61] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 35 seconds with 2m0s timeout
+2021-11-05T19:04:32.365Z [jfrou] [INFO ] [71e9513eb76faa61] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 40 seconds with 2m0s timeout
+2021-11-05T19:04:37.376Z [jfrou] [INFO ] [71e9513eb76faa61] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 45 seconds with 2m0s timeout
+2021-11-05T19:04:42.400Z [jfrou] [INFO ] [71e9513eb76faa61] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 50 seconds with 2m0s timeout
+2021-11-05T19:04:47.412Z [jfrou] [INFO ] [71e9513eb76faa61] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 55 seconds with 2m0s timeout
+2021-11-05T19:04:52.416Z [jfrou] [INFO ] [71e9513eb76faa61] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 60 seconds with 2m0s timeout
+2021-11-05T19:04:57.427Z [jfrou] [INFO ] [71e9513eb76faa61] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 65 seconds with 2m0s timeout
+2021-11-05T19:05:02.432Z [jfrou] [INFO ] [71e9513eb76faa61] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 70 seconds with 2m0s timeout
+2021-11-05T19:05:09.883Z [jfrou] [INFO ] [7d7e908af416c9b4] [bootstrap.go:76               ] [main                ] - Router (jfrou) service initialization started. Version: 7.26.0-1 Revision: fc921b2dfafca1829dfa35c5ee2dd6898e0faae1 PID: 3418 Home: /opt/jfrog/artifactory
+2021-11-05T19:05:09.883Z [jfrou] [INFO ] [7d7e908af416c9b4] [bootstrap.go:79               ] [main                ] - JFrog Router IP: 172.18.0.4
+2021-11-05T19:05:14.898Z [jfrou] [INFO ] [7d7e908af416c9b4] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 5 seconds with 2m0s timeout
+2021-11-05T19:05:19.921Z [jfrou] [INFO ] [7d7e908af416c9b4] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 10 seconds with 2m0s timeout
+2021-11-05T19:05:24.926Z [jfrou] [INFO ] [7d7e908af416c9b4] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 15 seconds with 2m0s timeout
+2021-11-05T19:05:29.949Z [jfrou] [INFO ] [7d7e908af416c9b4] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 20 seconds with 2m0s timeout
+2021-11-05T19:05:34.956Z [jfrou] [INFO ] [7d7e908af416c9b4] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 25 seconds with 2m0s timeout
+2021-11-05T19:05:39.967Z [jfrou] [INFO ] [7d7e908af416c9b4] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 30 seconds with 2m0s timeout
+2021-11-05T19:05:44.972Z [jfrou] [INFO ] [7d7e908af416c9b4] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 35 seconds with 2m0s timeout
+2021-11-05T19:05:49.976Z [jfrou] [INFO ] [7d7e908af416c9b4] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 40 seconds with 2m0s timeout
+2021-11-05T19:05:54.987Z [jfrou] [INFO ] [7d7e908af416c9b4] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 45 seconds with 2m0s timeout
+2021-11-05T19:05:59.991Z [jfrou] [INFO ] [7d7e908af416c9b4] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 50 seconds with 2m0s timeout
+2021-11-05T19:06:04.994Z [jfrou] [INFO ] [7d7e908af416c9b4] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 55 seconds with 2m0s timeout
+2021-11-05T19:06:10.001Z [jfrou] [INFO ] [7d7e908af416c9b4] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 60 seconds with 2m0s timeout
+2021-11-05T19:06:15.020Z [jfrou] [INFO ] [7d7e908af416c9b4] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 65 seconds with 2m0s timeout
+2021-11-05T19:06:20.038Z [jfrou] [INFO ] [7d7e908af416c9b4] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 70 seconds with 2m0s timeout
+2021-11-05T19:06:25.058Z [jfrou] [INFO ] [7d7e908af416c9b4] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 75 seconds with 2m0s timeout
+2021-11-05T19:06:30.073Z [jfrou] [INFO ] [7d7e908af416c9b4] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 80 seconds with 2m0s timeout
+2021-11-05T19:06:35.120Z [jfrou] [INFO ] [7d7e908af416c9b4] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 85 seconds with 2m0s timeout
+2021-11-05T19:06:44.120Z [jfrou] [INFO ] [2e6d988b73598c33] [bootstrap.go:76               ] [main                ] - Router (jfrou) service initialization started. Version: 7.26.0-1 Revision: fc921b2dfafca1829dfa35c5ee2dd6898e0faae1 PID: 3418 Home: /opt/jfrog/artifactory
+2021-11-05T19:06:44.120Z [jfrou] [INFO ] [2e6d988b73598c33] [bootstrap.go:79               ] [main                ] - JFrog Router IP: 172.18.0.4
+2021-11-05T19:06:49.135Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 5 seconds with 2m0s timeout
+2021-11-05T19:06:54.147Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 10 seconds with 2m0s timeout
+2021-11-05T19:06:59.202Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 15 seconds with 2m0s timeout
+2021-11-05T19:07:04.205Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 20 seconds with 2m0s timeout
+2021-11-05T19:07:09.218Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 25 seconds with 2m0s timeout
+2021-11-05T19:07:14.229Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 30 seconds with 2m0s timeout
+2021-11-05T19:07:19.242Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 35 seconds with 2m0s timeout
+2021-11-05T19:07:24.257Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 40 seconds with 2m0s timeout
+2021-11-05T19:07:29.269Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 45 seconds with 2m0s timeout
+2021-11-05T19:07:34.284Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 50 seconds with 2m0s timeout
+2021-11-05T19:07:39.304Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 55 seconds with 2m0s timeout
+2021-11-05T19:07:44.322Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 60 seconds with 2m0s timeout
+2021-11-05T19:07:49.333Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 65 seconds with 2m0s timeout
+2021-11-05T19:07:54.342Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 70 seconds with 2m0s timeout
+2021-11-05T19:07:59.347Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 75 seconds with 2m0s timeout
+2021-11-05T19:08:04.349Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 80 seconds with 2m0s timeout
+2021-11-05T19:08:09.357Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 85 seconds with 2m0s timeout
+2021-11-05T19:08:14.362Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 90 seconds with 2m0s timeout
+2021-11-05T19:08:19.389Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 95 seconds with 2m0s timeout
+2021-11-05T19:08:24.394Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 100 seconds with 2m0s timeout
+2021-11-05T19:08:29.405Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 105 seconds with 2m0s timeout
+2021-11-05T19:08:34.423Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 110 seconds with 2m0s timeout
+2021-11-05T19:08:39.440Z [jfrou] [INFO ] [2e6d988b73598c33] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 115 seconds with 2m0s timeout
+2021-11-05T19:08:44.122Z [jfrou] [FATAL] [2e6d988b73598c33] [bootstrap.go:98               ] [main                ] - Failed resolving master key: failed resolving 'shared.security.masterKey' key; file does not exist: /opt/jfrog/artifactory/var/etc/security/master.key
+2021-11-05T19:10:04.876Z [jfrou] [INFO ] [5b4ab0681027f8ee] [bootstrap.go:76               ] [main                ] - Router (jfrou) service initialization started. Version: 7.26.0-1 Revision: fc921b2dfafca1829dfa35c5ee2dd6898e0faae1 PID: 3413 Home: /opt/jfrog/artifactory
+2021-11-05T19:10:04.877Z [jfrou] [INFO ] [5b4ab0681027f8ee] [bootstrap.go:79               ] [main                ] - JFrog Router IP: 172.18.0.4
+2021-11-05T19:10:09.890Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 5 seconds with 2m0s timeout
+2021-11-05T19:10:14.895Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 10 seconds with 2m0s timeout
+2021-11-05T19:10:19.910Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 15 seconds with 2m0s timeout
+2021-11-05T19:10:25.030Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 20 seconds with 2m0s timeout
+2021-11-05T19:10:30.063Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 25 seconds with 2m0s timeout
+2021-11-05T19:10:35.078Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 30 seconds with 2m0s timeout
+2021-11-05T19:10:40.086Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 35 seconds with 2m0s timeout
+2021-11-05T19:10:45.090Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 40 seconds with 2m0s timeout
+2021-11-05T19:10:50.125Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 45 seconds with 2m0s timeout
+2021-11-05T19:10:55.134Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 50 seconds with 2m0s timeout
+2021-11-05T19:11:00.154Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 55 seconds with 2m0s timeout
+2021-11-05T19:11:05.184Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 60 seconds with 2m0s timeout
+2021-11-05T19:11:10.196Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 65 seconds with 2m0s timeout
+2021-11-05T19:11:15.209Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 70 seconds with 2m0s timeout
+2021-11-05T19:11:20.216Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 75 seconds with 2m0s timeout
+2021-11-05T19:11:25.236Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 80 seconds with 2m0s timeout
+2021-11-05T19:11:30.241Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 85 seconds with 2m0s timeout
+2021-11-05T19:11:35.276Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 90 seconds with 2m0s timeout
+2021-11-05T19:11:40.287Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 95 seconds with 2m0s timeout
+2021-11-05T19:11:45.307Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 100 seconds with 2m0s timeout
+2021-11-05T19:11:50.334Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 105 seconds with 2m0s timeout
+2021-11-05T19:11:55.361Z [jfrou] [INFO ] [5b4ab0681027f8ee] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 110 seconds with 2m0s timeout
+2021-11-07T09:19:18.803Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [bootstrap.go:76               ] [main                ] - Router (jfrou) service initialization started. Version: 7.26.0-1 Revision: fc921b2dfafca1829dfa35c5ee2dd6898e0faae1 PID: 3397 Home: /opt/jfrog/artifactory
+2021-11-07T09:19:18.874Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [bootstrap.go:79               ] [main                ] - JFrog Router IP: 172.18.0.5
+2021-11-07T09:19:23.951Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 5 seconds with 2m0s timeout
+2021-11-07T09:19:28.964Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 10 seconds with 2m0s timeout
+2021-11-07T09:19:33.977Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 15 seconds with 2m0s timeout
+2021-11-07T09:19:38.991Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 20 seconds with 2m0s timeout
+2021-11-07T09:19:43.994Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 25 seconds with 2m0s timeout
+2021-11-07T09:19:49.005Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 30 seconds with 2m0s timeout
+2021-11-07T09:19:54.010Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 35 seconds with 2m0s timeout
+2021-11-07T09:19:59.014Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 40 seconds with 2m0s timeout
+2021-11-07T09:20:04.019Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 45 seconds with 2m0s timeout
+2021-11-07T09:20:09.031Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 50 seconds with 2m0s timeout
+2021-11-07T09:20:14.036Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 55 seconds with 2m0s timeout
+2021-11-07T09:20:19.043Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 60 seconds with 2m0s timeout
+2021-11-07T09:20:24.067Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 65 seconds with 2m0s timeout
+2021-11-07T09:20:29.076Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 70 seconds with 2m0s timeout
+2021-11-07T09:20:34.083Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 75 seconds with 2m0s timeout
+2021-11-07T09:20:39.088Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 80 seconds with 2m0s timeout
+2021-11-07T09:20:44.102Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 85 seconds with 2m0s timeout
+2021-11-07T09:20:49.125Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 90 seconds with 2m0s timeout
+2021-11-07T09:20:54.128Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 95 seconds with 2m0s timeout
+2021-11-07T09:20:59.141Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 100 seconds with 2m0s timeout
+2021-11-07T09:21:04.185Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 105 seconds with 2m0s timeout
+2021-11-07T09:21:09.275Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 110 seconds with 2m0s timeout
+2021-11-07T09:21:14.286Z [jfrou] [INFO ] [1f07c9d9b5850bf3] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 115 seconds with 2m0s timeout
+2021-11-07T09:21:18.956Z [jfrou] [FATAL] [1f07c9d9b5850bf3] [bootstrap.go:98               ] [main                ] - Failed resolving master key: failed resolving 'shared.security.masterKey' key; file does not exist: /opt/jfrog/artifactory/var/etc/security/master.key

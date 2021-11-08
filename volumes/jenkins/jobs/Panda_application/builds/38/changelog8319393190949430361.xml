@@ -1,0 +1,10 @@
+commit b1bb64b953546337ae6f4b6e1b785a17beaf989c
+tree 1a05608bad8b0f98a5cb58ac5f5521e4b3faf979
+parent a414c124651feba534a9dd86add5f8c9e9ae358a
+author Jarosław Gołąb <jaroslaw.golab@s004424.korora.makolab.net> 2021-11-08 17:52:38 +0100
+committer Jarosław Gołąb <jaroslaw.golab@s004424.korora.makolab.net> 2021-11-08 17:52:38 +0100
+
+    artifactory
+
+
+:100644 100644 6ad96b8dc57be7dafa2300916a5d921f21d553ce 6d5fb0ac6e6ab1010238f5b32c18c677903ca087 M	pom.xml

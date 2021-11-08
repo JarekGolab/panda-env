@@ -1,0 +1,10 @@
+commit a414c124651feba534a9dd86add5f8c9e9ae358a
+tree c5530b32bef6d81d12f9db746409f1bf9bb09976
+parent 0e44a65a15d2d8a199d20222b0f0606a3db86e15
+author Jarosław Gołąb <jaroslaw.golab@s004424.korora.makolab.net> 2021-11-08 17:49:11 +0100
+committer Jarosław Gołąb <jaroslaw.golab@s004424.korora.makolab.net> 2021-11-08 17:49:11 +0100
+
+    selenium
+
+
+:100644 100644 76118eec5e6ffd42cdda084de3a339a7f03c4e1d e895a0ffa4bf754d0220e05c02fe4c6096a90ca5 M	src/test/java/PandaApplicationSeleniumTest.java

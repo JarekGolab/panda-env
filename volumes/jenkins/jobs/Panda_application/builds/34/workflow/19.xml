@@ -1,0 +1,34 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.90">
+    <parentIds>
+      <string>18</string>
+    </parentIds>
+    <id>19</id>
+    <descriptorId>jenkins.plugins.git.GitStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.90">
+      <arguments>
+        <entry>
+          <string>branch</string>
+          <string>test_selenium</string>
+        </entry>
+        <entry>
+          <string>url</string>
+          <string>https://github.com/JarekGolab/panda_application.git</string>
+        </entry>
+        <entry>
+          <string>credentialsId</string>
+          <string>PandaGitHub</string>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.42">
+      <startTime>1636382231667</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2021-11-07 17:08:31.595 UTC</timestamp>
+  <md5sum>727d88a23dab05dbd92460fc5d96abf6</md5sum>
+  <fileName>Credential id=PandaGitHub name=JarekGolab/****** (GitHub for PandaAcademy)</fileName>
+  <usages>
+    <entry>
+      <string>Panda_application</string>
+      <ranges>14-15,18-19,21-39,43-48</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

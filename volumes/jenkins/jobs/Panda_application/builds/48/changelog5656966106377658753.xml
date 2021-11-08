@@ -1,0 +1,10 @@
+commit 23a68a3f8770ca00c7813b1a2735b1c1eb8d5a4d
+tree b3b64a8213294c4511ec6e94b65e673364c6e34e
+parent 88b1e549b01c049093eb4355301e51302f32aa85
+author JarekGolab <jarek.golab@twoje.it> 2021-11-08 19:21:01 +0000
+committer JarekGolab <jarek.golab@twoje.it> 2021-11-08 19:21:01 +0000
+
+    test
+
+
+:100644 100644 1bc85cfa572ff22ec679e6094fb19317bac314fe a0fd91b2f9cc13598f1c00d71ab61794d951fef1 M	Dockerfile

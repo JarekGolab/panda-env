@@ -1,0 +1,520 @@
+2021-11-05T19:03:56.891Z [jfrt ] [INFO ] [b54237add122e41a] [o.a.c.h.HaNodeProperties:65   ] [ocalhost-startStop-2] - Artifactory is running in non-clustered mode.
+2021-11-05T19:03:56.913Z [jfrt ] [INFO ] [b54237add122e41a] [tifactoryHomeConfigListener:85] [ocalhost-startStop-2] - Resolved Home: '/opt/jfrog/artifactory
+2021-11-05T19:03:57.323Z [jfrt ] [INFO ] [                ] [o.j.c.w.FileWatcher:147       ] [Thread-6            ] - Starting watch of folder configurations
+2021-11-05T19:03:57.410Z [jfrt ] [WARN ] [b54237add122e41a] [c.z.h.u.DriverDataSource:70   ] [ocalhost-startStop-2] - Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2021-11-05T19:03:58.482Z [jfrt ] [ERROR] [b54237add122e41a] [c.z.h.p.HikariPool:593        ] [ocalhost-startStop-2] - HikariCP Main - Exception during pool initialization.
+java.sql.SQLException: Failed to create database '/opt/jfrog/artifactory/var/data/artifactory/derby', see the next exception for details.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.derby.iapi.error.StandardException: Failed to create database '/opt/jfrog/artifactory/var/data/artifactory/derby', see the next exception for details.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 15 common frames omitted
+Caused by: org.apache.derby.iapi.error.StandardException: The database directory '/var/opt/jfrog/artifactory/data/artifactory/derby' exists. However, it does not contain the expected 'service.properties' file. Perhaps Derby was brought down in the middle of creating this database. You may want to delete this directory and try creating the database again.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	... 12 common frames omitted
+2021-11-05T19:03:58.484Z [jfrt ] [ERROR] [b54237add122e41a] [o.a.c.VersionProviderImpl:108 ] [ocalhost-startStop-2] - Failed to resolve version information: Could not find database table: db_properties
+2021-11-05T19:03:58.484Z [jfrt ] [ERROR] [b54237add122e41a] [tifactoryHomeConfigListener:55] [ocalhost-startStop-2] - Failed initializing Home. Caught exception: 
+java.lang.IllegalStateException: Could not find database table: db_properties
+	at org.artifactory.converter.VersionProviderImpl.init(VersionProviderImpl.java:109)
+	at org.artifactory.lifecycle.webapp.servlet.BasicConfigurationManager.initVersion(BasicConfigurationManager.java:160)
+	at org.artifactory.lifecycle.webapp.servlet.BasicConfigurationManager.initArtifactoryInstallation(BasicConfigurationManager.java:139)
+	at org.artifactory.lifecycle.webapp.servlet.BasicConfigurationManager.initialize(BasicConfigurationManager.java:126)
+	at org.artifactory.lifecycle.webapp.servlet.ArtifactoryHomeConfigListener.initBasicConfigManager(ArtifactoryHomeConfigListener.java:61)
+	at org.artifactory.lifecycle.webapp.servlet.ArtifactoryHomeConfigListener.contextInitialized(ArtifactoryHomeConfigListener.java:53)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4763)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:755)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:695)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:673)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1881)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.IllegalStateException: Could not find database table: db_properties
+	at org.artifactory.common.config.db.DbVersionDao.isDbPropertiesTableExists(DbVersionDao.java:65)
+	at org.artifactory.converter.VersionProviderImpl.tryToResolveFromDb(VersionProviderImpl.java:197)
+	at org.artifactory.converter.VersionProviderImpl.getCompoundVersionDetailsFromDbIfExists(VersionProviderImpl.java:122)
+	at org.artifactory.converter.VersionProviderImpl.loadOriginalDbVersion(VersionProviderImpl.java:143)
+	at org.artifactory.converter.VersionProviderImpl.init(VersionProviderImpl.java:104)
+	... 18 common frames omitted
+Caused by: java.sql.SQLException: Failed to create database '/opt/jfrog/artifactory/var/data/artifactory/derby', see the next exception for details.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
+	... 4 common frames omitted
+Caused by: org.apache.derby.iapi.error.StandardException: Failed to create database '/opt/jfrog/artifactory/var/data/artifactory/derby', see the next exception for details.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 15 common frames omitted
+Caused by: org.apache.derby.iapi.error.StandardException: The database directory '/var/opt/jfrog/artifactory/data/artifactory/derby' exists. However, it does not contain the expected 'service.properties' file. Perhaps Derby was brought down in the middle of creating this database. You may want to delete this directory and try creating the database again.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	... 12 common frames omitted
+2021-11-05T19:03:58.491Z [jfrt ] [ERROR] [b54237add122e41a] [actoryContextConfigListener:92] [ocalhost-startStop-2] - Failed initializing Artifactory context: Artifactory home not initialized.
+2021-11-05T19:05:13.331Z [jfrt ] [INFO ] [6ce509d639cfee9d] [o.a.c.h.HaNodeProperties:65   ] [ocalhost-startStop-2] - Artifactory is running in non-clustered mode.
+2021-11-05T19:05:13.347Z [jfrt ] [INFO ] [6ce509d639cfee9d] [tifactoryHomeConfigListener:85] [ocalhost-startStop-2] - Resolved Home: '/opt/jfrog/artifactory
+2021-11-05T19:05:13.675Z [jfrt ] [INFO ] [                ] [o.j.c.w.FileWatcher:147       ] [Thread-6            ] - Starting watch of folder configurations
+2021-11-05T19:05:13.715Z [jfrt ] [WARN ] [6ce509d639cfee9d] [c.z.h.u.DriverDataSource:70   ] [ocalhost-startStop-2] - Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2021-11-05T19:05:14.757Z [jfrt ] [ERROR] [6ce509d639cfee9d] [c.z.h.p.HikariPool:593        ] [ocalhost-startStop-2] - HikariCP Main - Exception during pool initialization.
+java.sql.SQLException: Failed to create database '/opt/jfrog/artifactory/var/data/artifactory/derby', see the next exception for details.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.derby.iapi.error.StandardException: Failed to create database '/opt/jfrog/artifactory/var/data/artifactory/derby', see the next exception for details.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 15 common frames omitted
+Caused by: org.apache.derby.iapi.error.StandardException: The database directory '/var/opt/jfrog/artifactory/data/artifactory/derby' exists. However, it does not contain the expected 'service.properties' file. Perhaps Derby was brought down in the middle of creating this database. You may want to delete this directory and try creating the database again.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	... 12 common frames omitted
+2021-11-05T19:05:14.758Z [jfrt ] [ERROR] [6ce509d639cfee9d] [o.a.c.VersionProviderImpl:108 ] [ocalhost-startStop-2] - Failed to resolve version information: Could not find database table: db_properties
+2021-11-05T19:05:14.759Z [jfrt ] [ERROR] [6ce509d639cfee9d] [tifactoryHomeConfigListener:55] [ocalhost-startStop-2] - Failed initializing Home. Caught exception: 
+java.lang.IllegalStateException: Could not find database table: db_properties
+	at org.artifactory.converter.VersionProviderImpl.init(VersionProviderImpl.java:109)
+	at org.artifactory.lifecycle.webapp.servlet.BasicConfigurationManager.initVersion(BasicConfigurationManager.java:160)
+	at org.artifactory.lifecycle.webapp.servlet.BasicConfigurationManager.initArtifactoryInstallation(BasicConfigurationManager.java:139)
+	at org.artifactory.lifecycle.webapp.servlet.BasicConfigurationManager.initialize(BasicConfigurationManager.java:126)
+	at org.artifactory.lifecycle.webapp.servlet.ArtifactoryHomeConfigListener.initBasicConfigManager(ArtifactoryHomeConfigListener.java:61)
+	at org.artifactory.lifecycle.webapp.servlet.ArtifactoryHomeConfigListener.contextInitialized(ArtifactoryHomeConfigListener.java:53)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4763)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:755)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:695)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:673)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1881)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.IllegalStateException: Could not find database table: db_properties
+	at org.artifactory.common.config.db.DbVersionDao.isDbPropertiesTableExists(DbVersionDao.java:65)
+	at org.artifactory.converter.VersionProviderImpl.tryToResolveFromDb(VersionProviderImpl.java:197)
+	at org.artifactory.converter.VersionProviderImpl.getCompoundVersionDetailsFromDbIfExists(VersionProviderImpl.java:122)
+	at org.artifactory.converter.VersionProviderImpl.loadOriginalDbVersion(VersionProviderImpl.java:143)
+	at org.artifactory.converter.VersionProviderImpl.init(VersionProviderImpl.java:104)
+	... 18 common frames omitted
+Caused by: java.sql.SQLException: Failed to create database '/opt/jfrog/artifactory/var/data/artifactory/derby', see the next exception for details.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
+	... 4 common frames omitted
+Caused by: org.apache.derby.iapi.error.StandardException: Failed to create database '/opt/jfrog/artifactory/var/data/artifactory/derby', see the next exception for details.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 15 common frames omitted
+Caused by: org.apache.derby.iapi.error.StandardException: The database directory '/var/opt/jfrog/artifactory/data/artifactory/derby' exists. However, it does not contain the expected 'service.properties' file. Perhaps Derby was brought down in the middle of creating this database. You may want to delete this directory and try creating the database again.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	... 12 common frames omitted
+2021-11-05T19:05:14.766Z [jfrt ] [ERROR] [6ce509d639cfee9d] [actoryContextConfigListener:92] [ocalhost-startStop-2] - Failed initializing Artifactory context: Artifactory home not initialized.
+2021-11-05T19:06:48.326Z [jfrt ] [INFO ] [973b1b6df47d6c13] [o.a.c.h.HaNodeProperties:65   ] [ocalhost-startStop-2] - Artifactory is running in non-clustered mode.
+2021-11-05T19:06:48.350Z [jfrt ] [INFO ] [973b1b6df47d6c13] [tifactoryHomeConfigListener:85] [ocalhost-startStop-2] - Resolved Home: '/opt/jfrog/artifactory
+2021-11-05T19:06:48.742Z [jfrt ] [INFO ] [                ] [o.j.c.w.FileWatcher:147       ] [Thread-6            ] - Starting watch of folder configurations
+2021-11-05T19:06:48.790Z [jfrt ] [WARN ] [973b1b6df47d6c13] [c.z.h.u.DriverDataSource:70   ] [ocalhost-startStop-2] - Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2021-11-05T19:06:49.862Z [jfrt ] [ERROR] [973b1b6df47d6c13] [c.z.h.p.HikariPool:593        ] [ocalhost-startStop-2] - HikariCP Main - Exception during pool initialization.
+java.sql.SQLException: Failed to create database '/opt/jfrog/artifactory/var/data/artifactory/derby', see the next exception for details.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.derby.iapi.error.StandardException: Failed to create database '/opt/jfrog/artifactory/var/data/artifactory/derby', see the next exception for details.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 15 common frames omitted
+Caused by: org.apache.derby.iapi.error.StandardException: The database directory '/var/opt/jfrog/artifactory/data/artifactory/derby' exists. However, it does not contain the expected 'service.properties' file. Perhaps Derby was brought down in the middle of creating this database. You may want to delete this directory and try creating the database again.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	... 12 common frames omitted
+2021-11-05T19:06:49.867Z [jfrt ] [ERROR] [973b1b6df47d6c13] [o.a.c.VersionProviderImpl:108 ] [ocalhost-startStop-2] - Failed to resolve version information: Could not find database table: db_properties
+2021-11-05T19:06:49.868Z [jfrt ] [ERROR] [973b1b6df47d6c13] [tifactoryHomeConfigListener:55] [ocalhost-startStop-2] - Failed initializing Home. Caught exception: 
+java.lang.IllegalStateException: Could not find database table: db_properties
+	at org.artifactory.converter.VersionProviderImpl.init(VersionProviderImpl.java:109)
+	at org.artifactory.lifecycle.webapp.servlet.BasicConfigurationManager.initVersion(BasicConfigurationManager.java:160)
+	at org.artifactory.lifecycle.webapp.servlet.BasicConfigurationManager.initArtifactoryInstallation(BasicConfigurationManager.java:139)
+	at org.artifactory.lifecycle.webapp.servlet.BasicConfigurationManager.initialize(BasicConfigurationManager.java:126)
+	at org.artifactory.lifecycle.webapp.servlet.ArtifactoryHomeConfigListener.initBasicConfigManager(ArtifactoryHomeConfigListener.java:61)
+	at org.artifactory.lifecycle.webapp.servlet.ArtifactoryHomeConfigListener.contextInitialized(ArtifactoryHomeConfigListener.java:53)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4763)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:755)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:695)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:673)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1881)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.IllegalStateException: Could not find database table: db_properties
+	at org.artifactory.common.config.db.DbVersionDao.isDbPropertiesTableExists(DbVersionDao.java:65)
+	at org.artifactory.converter.VersionProviderImpl.tryToResolveFromDb(VersionProviderImpl.java:197)
+	at org.artifactory.converter.VersionProviderImpl.getCompoundVersionDetailsFromDbIfExists(VersionProviderImpl.java:122)
+	at org.artifactory.converter.VersionProviderImpl.loadOriginalDbVersion(VersionProviderImpl.java:143)
+	at org.artifactory.converter.VersionProviderImpl.init(VersionProviderImpl.java:104)
+	... 18 common frames omitted
+Caused by: java.sql.SQLException: Failed to create database '/opt/jfrog/artifactory/var/data/artifactory/derby', see the next exception for details.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
+	... 4 common frames omitted
+Caused by: org.apache.derby.iapi.error.StandardException: Failed to create database '/opt/jfrog/artifactory/var/data/artifactory/derby', see the next exception for details.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 15 common frames omitted
+Caused by: org.apache.derby.iapi.error.StandardException: The database directory '/var/opt/jfrog/artifactory/data/artifactory/derby' exists. However, it does not contain the expected 'service.properties' file. Perhaps Derby was brought down in the middle of creating this database. You may want to delete this directory and try creating the database again.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	... 12 common frames omitted
+2021-11-05T19:06:49.870Z [jfrt ] [ERROR] [973b1b6df47d6c13] [actoryContextConfigListener:92] [ocalhost-startStop-2] - Failed initializing Artifactory context: Artifactory home not initialized.
+2021-11-05T19:10:09.009Z [jfrt ] [INFO ] [aa048f0cefe44226] [o.a.c.h.HaNodeProperties:65   ] [ocalhost-startStop-2] - Artifactory is running in non-clustered mode.
+2021-11-05T19:10:09.041Z [jfrt ] [INFO ] [aa048f0cefe44226] [tifactoryHomeConfigListener:85] [ocalhost-startStop-2] - Resolved Home: '/opt/jfrog/artifactory
+2021-11-05T19:10:09.508Z [jfrt ] [INFO ] [                ] [o.j.c.w.FileWatcher:147       ] [Thread-6            ] - Starting watch of folder configurations
+2021-11-05T19:10:09.667Z [jfrt ] [WARN ] [aa048f0cefe44226] [c.z.h.u.DriverDataSource:70   ] [ocalhost-startStop-2] - Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2021-11-05T19:10:10.755Z [jfrt ] [ERROR] [aa048f0cefe44226] [c.z.h.p.HikariPool:593        ] [ocalhost-startStop-2] - HikariCP Main - Exception during pool initialization.
+java.sql.SQLException: Failed to create database '/opt/jfrog/artifactory/var/data/artifactory/derby', see the next exception for details.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.derby.iapi.error.StandardException: Failed to create database '/opt/jfrog/artifactory/var/data/artifactory/derby', see the next exception for details.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 15 common frames omitted
+Caused by: org.apache.derby.iapi.error.StandardException: The database directory '/var/opt/jfrog/artifactory/data/artifactory/derby' exists. However, it does not contain the expected 'service.properties' file. Perhaps Derby was brought down in the middle of creating this database. You may want to delete this directory and try creating the database again.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	... 12 common frames omitted
+2021-11-05T19:10:10.764Z [jfrt ] [ERROR] [aa048f0cefe44226] [o.a.c.VersionProviderImpl:108 ] [ocalhost-startStop-2] - Failed to resolve version information: Could not find database table: db_properties
+2021-11-05T19:10:10.765Z [jfrt ] [ERROR] [aa048f0cefe44226] [tifactoryHomeConfigListener:55] [ocalhost-startStop-2] - Failed initializing Home. Caught exception: 
+java.lang.IllegalStateException: Could not find database table: db_properties
+	at org.artifactory.converter.VersionProviderImpl.init(VersionProviderImpl.java:109)
+	at org.artifactory.lifecycle.webapp.servlet.BasicConfigurationManager.initVersion(BasicConfigurationManager.java:160)
+	at org.artifactory.lifecycle.webapp.servlet.BasicConfigurationManager.initArtifactoryInstallation(BasicConfigurationManager.java:139)
+	at org.artifactory.lifecycle.webapp.servlet.BasicConfigurationManager.initialize(BasicConfigurationManager.java:126)
+	at org.artifactory.lifecycle.webapp.servlet.ArtifactoryHomeConfigListener.initBasicConfigManager(ArtifactoryHomeConfigListener.java:61)
+	at org.artifactory.lifecycle.webapp.servlet.ArtifactoryHomeConfigListener.contextInitialized(ArtifactoryHomeConfigListener.java:53)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4763)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:755)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:695)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:673)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1881)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.IllegalStateException: Could not find database table: db_properties
+	at org.artifactory.common.config.db.DbVersionDao.isDbPropertiesTableExists(DbVersionDao.java:65)
+	at org.artifactory.converter.VersionProviderImpl.tryToResolveFromDb(VersionProviderImpl.java:197)
+	at org.artifactory.converter.VersionProviderImpl.getCompoundVersionDetailsFromDbIfExists(VersionProviderImpl.java:122)
+	at org.artifactory.converter.VersionProviderImpl.loadOriginalDbVersion(VersionProviderImpl.java:143)
+	at org.artifactory.converter.VersionProviderImpl.init(VersionProviderImpl.java:104)
+	... 18 common frames omitted
+Caused by: java.sql.SQLException: Failed to create database '/opt/jfrog/artifactory/var/data/artifactory/derby', see the next exception for details.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
+	... 4 common frames omitted
+Caused by: org.apache.derby.iapi.error.StandardException: Failed to create database '/opt/jfrog/artifactory/var/data/artifactory/derby', see the next exception for details.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 15 common frames omitted
+Caused by: org.apache.derby.iapi.error.StandardException: The database directory '/var/opt/jfrog/artifactory/data/artifactory/derby' exists. However, it does not contain the expected 'service.properties' file. Perhaps Derby was brought down in the middle of creating this database. You may want to delete this directory and try creating the database again.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	... 12 common frames omitted
+2021-11-05T19:10:10.770Z [jfrt ] [ERROR] [aa048f0cefe44226] [actoryContextConfigListener:92] [ocalhost-startStop-2] - Failed initializing Artifactory context: Artifactory home not initialized.
+2021-11-07T09:19:22.697Z [jfrt ] [INFO ] [88e7da6122b80ad9] [o.a.c.h.HaNodeProperties:65   ] [ocalhost-startStop-2] - Artifactory is running in non-clustered mode.
+2021-11-07T09:19:22.724Z [jfrt ] [INFO ] [88e7da6122b80ad9] [tifactoryHomeConfigListener:85] [ocalhost-startStop-2] - Resolved Home: '/opt/jfrog/artifactory
+2021-11-07T09:19:23.151Z [jfrt ] [INFO ] [                ] [o.j.c.w.FileWatcher:147       ] [Thread-6            ] - Starting watch of folder configurations
+2021-11-07T09:19:23.238Z [jfrt ] [WARN ] [88e7da6122b80ad9] [c.z.h.u.DriverDataSource:70   ] [ocalhost-startStop-2] - Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2021-11-07T09:19:24.291Z [jfrt ] [ERROR] [88e7da6122b80ad9] [c.z.h.p.HikariPool:593        ] [ocalhost-startStop-2] - HikariCP Main - Exception during pool initialization.
+java.sql.SQLException: Failed to create database '/opt/jfrog/artifactory/var/data/artifactory/derby', see the next exception for details.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.derby.iapi.error.StandardException: Failed to create database '/opt/jfrog/artifactory/var/data/artifactory/derby', see the next exception for details.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 15 common frames omitted
+Caused by: org.apache.derby.iapi.error.StandardException: The database directory '/var/opt/jfrog/artifactory/data/artifactory/derby' exists. However, it does not contain the expected 'service.properties' file. Perhaps Derby was brought down in the middle of creating this database. You may want to delete this directory and try creating the database again.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	... 12 common frames omitted
+2021-11-07T09:19:24.296Z [jfrt ] [ERROR] [88e7da6122b80ad9] [o.a.c.VersionProviderImpl:108 ] [ocalhost-startStop-2] - Failed to resolve version information: Could not find database table: db_properties
+2021-11-07T09:19:24.297Z [jfrt ] [ERROR] [88e7da6122b80ad9] [tifactoryHomeConfigListener:55] [ocalhost-startStop-2] - Failed initializing Home. Caught exception: 
+java.lang.IllegalStateException: Could not find database table: db_properties
+	at org.artifactory.converter.VersionProviderImpl.init(VersionProviderImpl.java:109)
+	at org.artifactory.lifecycle.webapp.servlet.BasicConfigurationManager.initVersion(BasicConfigurationManager.java:160)
+	at org.artifactory.lifecycle.webapp.servlet.BasicConfigurationManager.initArtifactoryInstallation(BasicConfigurationManager.java:139)
+	at org.artifactory.lifecycle.webapp.servlet.BasicConfigurationManager.initialize(BasicConfigurationManager.java:126)
+	at org.artifactory.lifecycle.webapp.servlet.ArtifactoryHomeConfigListener.initBasicConfigManager(ArtifactoryHomeConfigListener.java:61)
+	at org.artifactory.lifecycle.webapp.servlet.ArtifactoryHomeConfigListener.contextInitialized(ArtifactoryHomeConfigListener.java:53)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4763)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:755)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:695)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:673)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1881)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.IllegalStateException: Could not find database table: db_properties
+	at org.artifactory.common.config.db.DbVersionDao.isDbPropertiesTableExists(DbVersionDao.java:65)
+	at org.artifactory.converter.VersionProviderImpl.tryToResolveFromDb(VersionProviderImpl.java:197)
+	at org.artifactory.converter.VersionProviderImpl.getCompoundVersionDetailsFromDbIfExists(VersionProviderImpl.java:122)
+	at org.artifactory.converter.VersionProviderImpl.loadOriginalDbVersion(VersionProviderImpl.java:143)
+	at org.artifactory.converter.VersionProviderImpl.init(VersionProviderImpl.java:104)
+	... 18 common frames omitted
+Caused by: java.sql.SQLException: Failed to create database '/opt/jfrog/artifactory/var/data/artifactory/derby', see the next exception for details.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
+	... 4 common frames omitted
+Caused by: org.apache.derby.iapi.error.StandardException: Failed to create database '/opt/jfrog/artifactory/var/data/artifactory/derby', see the next exception for details.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 15 common frames omitted
+Caused by: org.apache.derby.iapi.error.StandardException: The database directory '/var/opt/jfrog/artifactory/data/artifactory/derby' exists. However, it does not contain the expected 'service.properties' file. Perhaps Derby was brought down in the middle of creating this database. You may want to delete this directory and try creating the database again.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.vetService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$900(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
+	... 12 common frames omitted
+2021-11-07T09:19:24.298Z [jfrt ] [ERROR] [88e7da6122b80ad9] [actoryContextConfigListener:92] [ocalhost-startStop-2] - Failed initializing Artifactory context: Artifactory home not initialized.
