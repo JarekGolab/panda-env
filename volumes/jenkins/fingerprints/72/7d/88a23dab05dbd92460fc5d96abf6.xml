@@ -6,8 +6,14 @@
   <usages>
     <entry>
       <string>Panda_application</string>
-      <ranges>14-15,18-19,21-39,43-48</ranges>
+      <ranges>14-15,18-19,21-39,43-52</ranges>
     </entry>
   </usages>
-  <facets/>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@2.3.18">
+      <timestamp>1636401899293</timestamp>
+      <itemFullName>Panda_application</itemFullName>
+      <timestamp0>1636401629820</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+  </facets>
 </fingerprint>

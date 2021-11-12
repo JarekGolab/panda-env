@@ -16,3 +16,6 @@
 [filesystem "2c437c4af24c|Oracle Corporation|1.8.0_242|/dev/mapper/vagrant--vg-root"]
 	timestampResolution = 1001 microseconds
 	minRacyThreshold = 5943 microseconds
+[filesystem "Eclipse Adoptium|11.0.13|/dev/mapper/vagrant--vg-root"]
+	timestampResolution = 4000 nanoseconds
+	minRacyThreshold = 16726 microseconds

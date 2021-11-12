@@ -1,0 +1,10 @@
+commit 061324c0deea59d80f38e21b8b4860bec7d88894
+tree e04433c673afd405447e45b32b90c8d4aee4c7b8
+parent b1bb64b953546337ae6f4b6e1b785a17beaf989c
+author Jarosław Gołąb <jaroslaw.golab@s004424.korora.makolab.net> 2021-11-08 20:53:48 +0100
+committer Jarosław Gołąb <jaroslaw.golab@s004424.korora.makolab.net> 2021-11-08 20:53:48 +0100
+
+    jenkinsfile
+
+
+:000000 100644 0000000000000000000000000000000000000000 4a8ff6bfb985164ce3c504b31b208677da4d14b5 A	Jenkinsfile
